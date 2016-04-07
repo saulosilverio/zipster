@@ -1,0 +1,65 @@
+@media (max-width: 991px) {
+	.z-hd-01 {
+		margin-bottom: 30px;
+	}
+	.hd-pg {
+		margin: -30px 0 30px 0;
+	}
+	.z-ft-01 {
+		margin-top: 30px;
+	}
+}
+@media (max-width: 768px) {
+	/*HEADER*/
+	.z-hd-01 {
+		padding: 10px 0;
+	}
+	.z-logo a {
+		background-size: 80px 24px;
+		height: 24px;
+		width: 80px;
+	}
+	.lnk-hd-01 {
+		line-height: 24px;
+	}
+	.lnk-hd-01 [class^="i-"], 
+	.lnk-hd-01[class*="i-"]{
+		font-size: 18px;
+	}
+	.hd-pg {
+		padding: 10px;
+	}
+	.hd-pg h2 {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+	/*CONTEUDO*/
+	
+	/*Painel do restaurante*/
+	.logo-pnl {
+		left: 15px;
+	}
+	.info-pnl-rest {
+		padding: 15px;
+		padding-left: calc(30% + 30px);
+	}
+	
+	
+	/*FOOTER*/
+	.z-ft-01 {
+		padding: 20px 0;
+	}
+	.lnks-ft {
+		margin-bottom: 30px;
+	}
+	.lnks-social {
+		border-top: 1px solid #ddd;
+		padding-top: 20px;
+		text-align: center;
+	}
+}
+@media (max-width: 400px) {
+	.pnl-rest {
+		padding-bottom: 70%;
+	}
+}
