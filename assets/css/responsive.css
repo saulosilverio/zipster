@@ -9,7 +9,7 @@
 		margin-top: 30px;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	/*HEADER*/
 	.z-hd-01 {
 		padding: 10px 0;
@@ -33,6 +33,25 @@
 		font-size: 16px;
 		line-height: 1.6;
 	}
+	/* FORM */
+	.sep-form { 
+		padding: 20px 0;
+	}
+	
+	/*INPUT*/
+	.ipt-grp {
+		margin-bottom: 0;
+	}
+	.ipt-grp .col-ipt-grp {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.ipt-grp .col-ipt-grp .form-control {
+		border-radius: 3px !important;
+		border-right-width: 1px;
+	}
+	
+	
 	/*CONTEUDO*/
 	
 	/*Painel do restaurante*/
@@ -44,6 +63,13 @@
 		padding-left: calc(30% + 30px);
 	}
 	
+	/*MODAL*/
+	.modal-dialog {
+		margin: 0;
+	}
+	.modal-acc .modal-content {
+		padding: 30px 20px;
+	}
 	
 	/*FOOTER*/
 	.z-ft-01 {

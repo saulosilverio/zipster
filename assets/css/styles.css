@@ -23,8 +23,206 @@ a {
 		 -o-transition: all 0.2s ease-in-out;
 		    transition: all 0.2s ease-in-out;
 }
-a:hover {
+a:hover,
+a:focus,
+a:active {
 	text-decoration: none;
+	outline: none;
+}
+
+label {
+	font-weight: 300;
+	text-align: left;
+}
+
+/***************************
+FORM
+***************************/
+.form-group {
+	margin-bottom: 20px;
+}
+.radio-inline, 
+.checkbox-inline {
+	font-weight: 300;
+}
+.sep-form {
+	display: block;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 40px 0;
+}
+.leg-form-group {
+	color: #999;
+	font-size: 18px;
+	font-weight: 100;
+}
+.esqueci {
+	display: block;
+	margin-top: 20px;
+}
+
+/***************************
+BOTOES
+***************************/
+.btn {
+	font-weight: 300;
+	text-transform: uppercase;
+	border: none;
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+.btn-facebook {
+	background: #3b5998;
+	color: #fff;
+}
+.btn-facebook:hover {
+	color: #fff;
+	background: #334e87;
+}
+.btn-facebook:focus {
+	color: #fff;
+	background: #2e4474;
+}
+.btn-facebook .i-facebook {
+	margin-right: 8px;
+}
+.btn-facebook.btn-lg {
+	font-size: 14px;
+}
+.btn-lg, 
+.btn-group-lg > .btn {
+	font-size: 16px;
+	padding: 15px;
+}
+
+/***************************
+INPUTS
+***************************/
+.form-control {
+	color: #666;
+	box-shadow: none;
+	font-weight: 300;
+	 -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+.input-lg {
+	font-size: 16px;
+}
+.ipt-grp {
+	display: table;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.ipt-grp .col-ipt-grp {
+	display: table-cell;
+	width: auto;
+}
+.ipt-grp .col-sel-grp {
+	display: table-cell;
+	padding-right: 10px;
+	vertical-align: top;
+	width: auto;
+}
+.ipt-grp .col-sep-grp {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+}
+.ipt-grp .col-sep-grp span {
+	background: #f9f9f9;
+	color: #999;
+	display: block;
+	border: 1px solid #ccc;
+	border-right: none;
+	line-height: 32px;
+	padding: 0 5px;
+}
+.ipt-grp .col-ipt-grp .form-control{
+	display: inherit;
+	border-radius: 0;
+	border-right-width: 0;
+}
+.ipt-grp .col-ipt-grp:first-child .form-control {
+	border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+}
+.ipt-grp .col-ipt-grp:last-child .form-control {
+	border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	border-right: 1px solid #ccc;
+}
+.ipt-grp .col-ipt-grp .btn {
+	border-radius: 0;
+}
+
+/***************************
+ALERTAS
+***************************/
+.alert {
+  padding: 15px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+}
+.alert-dismissable, 
+.alert-dismissible {
+	padding-right: 35px;	
+}
+.alert .close {
+	color: #fff !important;
+	font-weight: 100;
+	text-shadow: none;
+}
+.alert-success {
+  background-color: #64D575;
+  color: #fff;
+}
+.alert-success hr {
+  border-top-color: #fff;
+}
+.alert-success .alert-link {
+  color: #fff;
+}
+.alert-info {
+  background-color: #77CFF3;
+  color: #fff;
+}
+.alert-info hr {
+  border-top-color: #fff;
+}
+.alert-info .alert-link {
+  color: #fff;
+}
+.alert-warning {
+  background-color: #FFF574;
+  color: #7F7F39;
+}
+.alert-warning hr {
+  border-top-color: #7F7F39;
+}
+.alert-warning .alert-link {
+  color: #fff;
+}
+.alert-danger {
+  background-color: #FF5E4F;
+  color: #fff;
+}
+.alert-danger hr {
+  border-top-color: #fff;
+}
+.alert-danger .alert-link {
+  color: #fff;
 }
 
 /***************************
@@ -128,12 +326,17 @@ CONTEUDO
 .pnl-rest {
 	background:#f9f9f9;
 	border-radius: 3px;
+	border: 1px solid transparent;
 	color: #444;
+	display: block;
 	margin-bottom: 30px;
 	overflow: hidden;
 	padding-bottom: 60%;
 	position: relative;	
 	width: 100%;
+}
+.pnl-rest:hover {
+	border-color: #4ACF74;
 }
 .pnl-rest .capa-rest {
 	height: auto;
@@ -193,7 +396,66 @@ CONTEUDO
 .col-md-4 .pnl-rest .info-pnl-rest {
 	padding: 20px;
 	padding-left: calc(30% + 40px);
-} 
+}
+
+/***************************
+MODAL
+***************************/
+.modal {
+	font-weight: 300;
+}
+.modal .close-modal {
+    background: none;
+    border-radius: 100%;
+    box-sizing: content-box;
+    border: 1px solid #666;
+    color: #666;
+    font-size: 14px;
+    float: none;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 2px;
+    opacity: 0.2;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 28px;
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+    
+}
+.modal .close-modal:hover {
+	opacity: 0.6;
+}
+.modal-content {
+	border: none;
+	box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal conta */
+.modal-acc {
+	color: #666;
+	font-weight: 300;
+	text-align: center;
+}
+.modal-acc label {
+	text-align: left;
+}
+.modal-acc .modal-content {
+	padding: 60px 40px;
+}
+.modal-acc .modal-title {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.modal-acc .modal-body {
+	padding: 0;
+}
 
 /***************************
 FOOTER
@@ -244,4 +506,11 @@ FOOTER
 .lnks-social a:active,
 .lnks-social a:focus {
 	background: #999;
+}
+
+/***************************
+FUNCIONAIS
+***************************/
+.m-top {
+	margin-top: 20px;
 }
