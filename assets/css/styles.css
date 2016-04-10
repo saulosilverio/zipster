@@ -11,10 +11,55 @@ ICONES
 @import url("../fonts/zipster/style.css");
 
 /***************************
+FONTS
+***************************/
+@font-face {
+	font-family: "Museos Sans";
+	src: url("../fonts/MuseoSans-100.eot");
+	src: local("☺"), 
+		 url("../fonts/MuseoSans-100.woff") format("woff"), 
+		 url("../fonts/MuseoSans-100.ttf") format("truetype"), 
+		 url("../fonts/MuseoSans-100.svg") format("svg");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Museos Sans";
+	src: url("../fonts/MuseoSans-300.eot");
+	src: local("☺"), 
+		 url("../fonts/MuseoSans-300.woff") format("woff"), 
+		 url("../fonts/MuseoSans-300.ttf") format("truetype"), 
+		 url("../fonts/MuseoSans-300.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Museos Sans";
+	src: url("../fonts/MuseoSans-500.eot");
+	src: local("☺"), 
+		 url("../fonts/MuseoSans-500.woff") format("woff"), 
+		 url("../fonts/MuseoSans-500.ttf") format("truetype"), 
+		 url("../fonts/MuseoSans-500.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Museos Sans";
+	src: url("../fonts/MuseoSans-700.eot");
+	src: local("☺"), 
+		 url("../fonts/MuseoSans-700.woff") format("woff"), 
+		 url("../fonts/MuseoSans-700.ttf") format("truetype"), 
+		 url("../fonts/MuseoSans-700.svg") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+
+/***************************
 APLICAÇÕES GERAIS
 ***************************/
 body {
 	font-family: "Museos Sans";
+	font-weight: 300;
 }
 a {
 	-webkit-transition: all 0.2s ease-in-out;
@@ -33,6 +78,12 @@ a:active {
 label {
 	font-weight: 300;
 	text-align: left;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+	font-weight: 100;
+}
+p {
+	font-weight: 300;
 }
 
 /***************************
@@ -62,6 +113,9 @@ FORM
 	display: block;
 	margin-top: 20px;
 }
+.lead {
+	font-weight: 100;
+}
 
 /***************************
 BOTOES
@@ -75,6 +129,10 @@ BOTOES
         -ms-transition: all 0.2s ease-in-out;
          -o-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
+}
+.btn:focus,
+.btn:active {
+	outline: none;
 }
 .btn-facebook {
 	background: #3b5998;
@@ -226,50 +284,6 @@ ALERTAS
 }
 
 /***************************
-FONTS
-***************************/
-@font-face {
-	font-family: "Museos Sans";
-	src: url("../fonts/MuseoSans-100.eot");
-	src: local("☺"), 
-		 url("../fonts/MuseoSans-100.woff") format("woff"), 
-		 url("../fonts/MuseoSans-100.ttf") format("truetype"), 
-		 url("../fonts/MuseoSans-100.svg") format("svg");
-	font-weight: 100;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Museos Sans";
-	src: url("../fonts/MuseoSans-300.eot");
-	src: local("☺"), 
-		 url("../fonts/MuseoSans-300.woff") format("woff"), 
-		 url("../fonts/MuseoSans-300.ttf") format("truetype"), 
-		 url("../fonts/MuseoSans-300.svg") format("svg");
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Museos Sans";
-	src: url("../fonts/MuseoSans-500.eot");
-	src: local("☺"), 
-		 url("../fonts/MuseoSans-500.woff") format("woff"), 
-		 url("../fonts/MuseoSans-500.ttf") format("truetype"), 
-		 url("../fonts/MuseoSans-500.svg") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Museos Sans";
-	src: url("../fonts/MuseoSans-700.eot");
-	src: local("☺"), 
-		 url("../fonts/MuseoSans-700.woff") format("woff"), 
-		 url("../fonts/MuseoSans-700.ttf") format("truetype"), 
-		 url("../fonts/MuseoSans-700.svg") format("svg");
-	font-weight: bold;
-	font-style: normal;
-}
-
-/***************************
 HEADER PRINCIPAL
 ***************************/
 .z-hd-01 {
@@ -322,7 +336,12 @@ HEADER PRINCIPAL
 /***************************
 CONTEUDO
 ***************************/
-/*Painel restaurante*/
+/* Paginas */
+.spc-v-pag {
+	min-height: 25vh;
+}
+
+/* Painel restaurante */
 .pnl-rest {
 	background:#f9f9f9;
 	border-radius: 3px;
@@ -456,13 +475,18 @@ MODAL
 .modal-acc .modal-body {
 	padding: 0;
 }
+.owl-carousel .item {
+	width: 100%;
+}
 
 /***************************
 FOOTER
 ***************************/
 .z-ft-01 {
-	background: #F9F9F9;
 	margin-top: 60px;
+}
+.z-ft-nav {
+	background: #F9F9F9;
 	padding: 40px 0;
 	width: 100%;
 }
@@ -507,7 +531,17 @@ FOOTER
 .lnks-social a:focus {
 	background: #999;
 }
-
+.z-ft-copy {
+	color: #999;
+	line-height: 1.8;
+	padding: 40px 0;
+}
+.z-ft-copy a {
+	color: #666;
+}
+.z-ft-copy a:hover {
+	color: #4bcf75;
+}
 /***************************
 FUNCIONAIS
 ***************************/

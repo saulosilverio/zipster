@@ -1,0 +1,81 @@
+/* CORES
+	- Cor primária Zipster  #4ACF74
+	- Cor das bordas #DDDDDD
+	- Cor padrão dos textos #666666 
+*/
+.tt-checkout {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+/*STEPS*/
+.ctn-ckt-steps {
+	background: #f9f9f9;
+	border-bottom: 1px solid #ddd;
+	color: #666;
+	margin: -60px 0 40px 0;
+	padding: 20px 0;
+}
+.ckt-steps {
+	display: table;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.ckt-steps li {
+	display: table-cell;
+	position: relative;
+	text-align: center;
+	width: 33.3333333%;
+}
+.ckt-steps li:after {
+	content: "\e905";
+	color: #ddd;
+	display: block;
+	font-family: "zipster";
+	font-size: 32px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.ckt-steps li:last-child:after {
+	display: none;
+}
+.ckt-steps .stp-num {
+	color: #ddd;
+	display: inline-block;
+	font-size: 48px;
+	font-weight: 100;
+	line-height: .8;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+.ckt-steps strong {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 100;
+	text-align: left;
+	vertical-align: middle;
+}
+.ckt-steps small {
+	display: block;
+	font-size: 12px;
+	color: #999;
+}
+.ckt-steps li.active .stp-num,
+.ckt-steps li.active strong {
+	color: #4bcf75;
+}
+
+/*FOOTER*/
+.z-ft-ckt {
+	background: #fff;
+	border-top: 1px solid #eee;
+	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+	bottom: 0;
+	left: 0;
+	padding: 30px;
+	position: fixed;
+	width: 100%;
+}
