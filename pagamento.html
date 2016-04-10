@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="pt-br, en">
+		<meta name="description" content="" />
+			<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="icon" href="assets/img/16-favicon.png" sizes="16x16">
+		<link rel="icon" href="assets/img/32-favicon.png" sizes="32x32">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		
+		<title>Zipster - Esqueci minha senha</title>
+		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/animate.css" rel="stylesheet">
+		<link href="assets/css/styles.css" rel="stylesheet">
+		<link href="assets/css/checkout.css" rel="stylesheet">
+		<link href="assets/css/responsive.css" rel="stylesheet">
+	</head>
+	<body class="ckt-bottom-space">
+	  
+		<!--HEADER-->
+		<header class="z-hd-01" role="banner">
+		    <div class="container">
+			    <h1 class="z-logo">
+				    <a href="#" title="Zipster">Zipster</a>
+			    </h1>
+			    <div class="pull-right">
+				    <div class="acc-menu">
+						<a data-toggle="dropdown"  href="#">
+							<div class="mini-profile-pic">
+								<img src="http://dummyimage.com/32x32/eeeeee/666666.jpg" class="img-circle img-responsive" alt="ex-profile" width="32" height="32">
+							</div>
+							Olá Mark
+						</a>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="#">Minha conta</a></li>
+							<li><a href="#">Meus pedidos</a></li>
+							<li><a href="#">Sair</a></li>
+						</ul>
+					</div>
+			    </div>
+		    </div>
+		</header>
+		<!-- / HEADER-->
+		
+		<section role="main">
+			<div class="ctn-ckt-steps">
+				<div class="container">
+					<ol class="ckt-steps">
+						<li>
+							<span class="stp-num">1</span>
+							<strong>Carrinho <small class="hidden-xs">Confira seu pedido</small></strong>
+						</li>
+						<li class="active">
+							<span class="stp-num">2</span>
+							<strong>Pagamento <small class="hidden-xs">Escolha a forma de pagamento</small></strong>
+						</li>
+						<li>
+							<span class="stp-num">3</span>
+							<strong>Confirmação <small class="hidden-xs">Agora é só esperar</small></strong>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="ckt-payment">
+			    <div class="container">
+				    <div class="row">
+					    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						    <h1 class="tt-checkout">Pagamento</h1>
+						    <div>
+
+								<!-- Abas -->
+								<ul class="pymt-tabs" role="tablist">
+									<li role="presentation" class="active">
+										<a href="#credito" aria-controls="credito" role="tab" data-toggle="tab">Cartão de crédito</a>
+									</li>
+									<li role="presentation">
+										<a href="#debito" aria-controls="debito" role="tab" data-toggle="tab">Cartão de débito</a>
+									</li>
+									<li role="presentation">
+										<a href="#ticket" aria-controls="ticket" role="tab" data-toggle="tab">Ticket refeição</a>
+									</li>
+									<li role="presentation">
+										<a href="#prepago" aria-controls="prepago" role="tab" data-toggle="tab">Créditos pré-pagos</a>
+									</li>
+								</ul>
+								
+								<!-- Corpo das abas -->
+								<div class="tab-content">
+									
+									<!-- Crédito -->
+									<div role="tabpanel" class="tab-pane active" id="credito">
+										<div id="creditCardList">
+											<div class="car-cred">
+												<div class="form-group">
+													<label class="radio-inline">
+														<input type="radio" name="cardFlag" id="mastercard" value="mastercard"> 
+														<img src="assets/img/cartoes/mastercard.svg" alt="Master Card" width="50" height="32">
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="cardFlag" id="visa" value="visa"> 
+														<img src="assets/img/cartoes/visa.svg" alt="Visa" width="50" height="32">
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="cardFlag" id="elo" value="elo"> 
+														<img src="assets/img/cartoes/elo.svg" alt="Elo" width="50" height="32">
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="cardFlag" id="diners" value="diners"> 
+														<img src="assets/img/cartoes/diners.svg" alt="Diners" width="50" height="32">
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="cardFlag" id="amex" value="amex"> 
+														<img src="assets/img/cartoes/amex.svg" alt="American Express" width="50" height="32">
+													</label>
+												</div>
+												<div class="row">
+													<div class="col-xs-12 col-sm-6 form-group">
+														<label class="control-label" for="cardNome">Nome como consta no cartão</label>
+														<input type="text" class="form-control input-lg" id="cardNome">
+													</div>
+													<div class="col-xs-12 col-sm-6 form-group">
+														<label class="control-label" for="cardNumero">Número</label>
+														<input type="number" class="form-control input-lg" id="cardNumero">
+													</div>
+													<div class="col-xs-12 col-sm-6 form-group">
+														<label class="control-label">Validade</label>
+														<div class="row">
+															<div class="col-xs-6">
+																<select class="form-control input-lg">
+																	<option>01</option>
+																	<option>02</option>
+																</select>
+															</div>
+															<div class="col-xs-6">
+																<select class="form-control input-lg">
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-6 col-sm-6 form-group">
+														<label class="control-label" for="cardCVV">Cód. de segurança</label>
+														<div class="cvv">
+															<input type="number" class="form-control input-lg" id="cardCVV">
+															<span class="img-cvv">
+																<img src="assets/img/cvv.svg" title="Código de segurança" alt="Código de segurança" width="75" height="42"/>
+															</span>
+														</div>
+													</div>
+													<div class="col-xs-6 col-sm-6 form-group">
+														<span class="ttl-card">
+															Valor a ser cobrado
+															<strong>R$ 00,00</strong>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<a id="addCard" class="btn-text" role="button" >+ Adicionar outro cartão</a>
+									</div>
+									
+									<div role="tabpanel" class="tab-pane" id="debito">
+										Cartão de débito
+									</div>
+									<div role="tabpanel" class="tab-pane" id="ticket">
+										Ticket refeição
+									</div>
+									<div role="tabpanel" class="tab-pane" id="prepago">
+										Créditos pré-pagos
+									</div>
+								</div>
+							
+							</div>
+					    </div>
+				    </div>
+				</div>
+			</div>		    
+		</section>
+					    
+		<!--FOOTER CHECKOUT-->
+		<footer class="z-ft-ckt">
+			<div class="pull-left hidden-xs">
+				<a class="btn btn-default btn-lg btn-round" href="#" role="button" tabindex="-1"><span class="i-arrow-left visible-sm-inline-block"></span> <span class="hidden-sm">Continuar comprando</span></a>
+			</div>
+			<div class="pull-right">
+				<span class="ttl">
+					Subtotal
+					<strong>R$ 00,00</strong>
+				</span>
+				<!-- Aparece somente quando o crédito é selecionado -->
+				<span class="ttl">
+					Creditos
+					<strong>R$ 00,00</strong>
+				</span>
+				<!-- Aparece somente quando o frete é selecionado -->
+				<span class="ttl">
+					Frete
+					<strong>R$ 00,00</strong>
+				</span>
+				<span class="ttl-grl">
+					Total
+					<strong>R$ 0.000,00</strong>
+				</span>
+				<button class="btn btn-primary btn-lg btn-round" type="submit">Prosseguir</button>
+			</div>
+		</footer>
+		<!-- / FOOTER-->
+		
+		<!-- MODAL ENDERECO -->
+		<div class="modal modal-acc fade" id="modalAddEndereco" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalLoginLabel">Novo endereço</h4>
+					<div class="modal-body">
+						<div class="row text-left">
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label">Tipo de endereço</label>
+								<div>
+									<label class="radio-inline">
+										<input type="radio" name="TipoTrabalho" id="TipoTrabalho" value="Trabalho"> Trabalho 
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="TipoCasa" id="TipoCasa" value="Casa"> Casa 
+									</label>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label" for="cadCep">Cep</label>
+								<input type="text" class="form-control input-lg" id="cadCep">
+							</div>
+						</div>
+						<div class="row text-left">
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label" for="cadRua">Rua</label>
+								<input type="text" class="form-control input-lg" id="cadRua">
+							</div>
+							<div class="col-xs-5 col-sm-2 form-group">
+								<label class="control-label" for="cadNumero">Número</label>
+								<input type="text" class="form-control input-lg" id="cadNumero">
+							</div>
+							<div class="col-xs-7 col-sm-4 form-group">
+								<label class="control-label" for="cadNumero">Complemento</label>
+								<input type="text" class="form-control input-lg" id="cadNumero">
+							</div>
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label" for="cadNomeEmpresa">Nome da Empresa</label>
+								<input type="text" class="form-control input-lg" id="cadNomeEmpresa">
+							</div>
+							<div class="col-xs-5 col-sm-2 form-group">
+								<label class="control-label" for="cadRamal">Ramal</label>
+								<input type="text" class="form-control input-lg" id="cadRamal">
+							</div>
+							<div class="col-xs-7 col-sm-4 form-group">
+								<label class="control-label" for="cadCelularEmpresa">Celular</label>
+								<input type="text" class="form-control input-lg" id="cadCelularEmpresa">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- / MODAL ENDERECO -->
+		
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		   $(document).ready( function() {
+				 //add cartão  
+				 $('#addCard').click(function() {
+				    $('#creditCardList').append('<div class="car-cred animated fadeIn"><button type="button" id="removeCard" class="btn-rmv"><span class="i-remove"></span></button><h4 class="subtt-checkout">Cartão adicional</h4><div class="form-group"><label class="radio-inline"><input type="radio" name="cardFlag" id="mastercard" value="mastercard"> <img src="assets/img/cartoes/mastercard.svg" alt="Master Card" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="visa" value="visa"> <img src="assets/img/cartoes/visa.svg" alt="Visa" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="elo" value="elo"> <img src="assets/img/cartoes/elo.svg" alt="Elo" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="diners" value="diners"> <img src="assets/img/cartoes/diners.svg" alt="Diners" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="amex" value="amex"> <img src="assets/img/cartoes/amex.svg" alt="American Express" width="50" height="32"></label></div><div class="row"><div class="col-xs-12 col-sm-6 form-group"><label class="control-label" for="cardNome">Nome como consta no cartão</label><input type="text" class="form-control input-lg" id="cardNome"></div><div class="col-xs-12 col-sm-6 form-group"><label class="control-label" for="cardNumero">Número</label><input type="number" class="form-control input-lg" id="cardNumero"></div><div class="col-xs-12 col-sm-6 form-group"><label class="control-label">Validade</label><div class="row"><div class="col-xs-6"><select class="form-control input-lg"><option>01</option><option>02</option></select></div><div class="col-xs-6"><select class="form-control input-lg"><option>2016</option><option>2017</option></select></div></div></div><div class="col-xs-6 col-sm-6 form-group"><label class="control-label" for="cardCVV">Cód. de segurança</label><div class="cvv"><input type="number" class="form-control input-lg" id="cardCVV"><span class="img-cvv"><img src="assets/img/cvv.svg" title="Código de segurança" alt="Código de segurança" width="75" height="42"/></span></div></div><div class="col-xs-6 col-sm-6 form-group"><span class="ttl-card">Valor a ser cobrado<strong>R$ 00,00</strong></span></div></div></div>');
+				 });
+			});
+		</script>
+	</body>
+</html>

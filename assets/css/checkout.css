@@ -111,9 +111,79 @@
 	color: #333;
 }
 
+/*PAGAMENTO*/
+.pymt-tabs {
+	display: table;
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+.pymt-tabs li {
+	border: 1px solid #ccc;
+	border-right-width: 0;
+	display: table-cell;
+	padding: 15px;
+	vertical-align: middle;
+	width: 25%;
+}
+.pymt-tabs li:first-child {
+	border-radius: 3px 0px 0px 3px;
+}
+.pymt-tabs li:last-child {
+	border-radius: 0px 3px 3px 0px;
+	border-right-width: 1px;
+}
+.pymt-tabs li a {
+	color: #999;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pymt-tabs li:hover a {
+	color: #4bcf75;
+}
+.pymt-tabs li.active,
+.pymt-tabs li.active:hover {
+	background:  #4bcf75;
+	border-color: #4bcf75;
+	color: #fff;
+}
+.pymt-tabs li.active a {
+	color: #fff;
+}
+.cvv {
+	display: table;
+	width: 100%;
+}
+.cvv .form-control {
+	display: table-cell;
+}
+.cvv .img-cvv {
+	display: table-cell;
+	padding-left: 10px;
+	vertical-align: top;
+	width: 75px;
+}
+.car-cred {
+	border-top: 1px solid #ddd;
+	padding: 40px 0;
+	position: relative;
+}
+.car-cred:first-of-type {
+	border-top: none;
+	padding: 0;
+	padding-bottom: 30px;
+}
+.car-cred .btn-rmv {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+ 
 /*TOTAL*/
 .ttl,
-.ttl-grl {
+.ttl-grl,
+.ttl-card {
 	color: #999;
 	display: inline-block;
 	margin-right: 20px;
@@ -122,7 +192,8 @@
 	vertical-align: middle;
 }
 .ttl strong,
-.ttl-grl strong {
+.ttl-grl strong,
+.ttl-card strong {
 	color: #111;
 	display: block;
 	font-size: 18px;
