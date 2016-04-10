@@ -18,12 +18,13 @@
 		
 		<title>Zipster - Esqueci minha senha</title>
 		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 		<link href="assets/css/styles.css" rel="stylesheet">
 		<link href="assets/css/checkout.css" rel="stylesheet">
 		<link href="assets/css/responsive.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="ckt-bottom-space">
 	  
 		<!--HEADER-->
 		<header class="z-hd-01" role="banner">
@@ -32,9 +33,19 @@
 				    <a href="#" title="Zipster">Zipster</a>
 			    </h1>
 			    <div class="pull-right">
-				    <a href="" class="lnk-hd-01" data-toggle="modal" data-target="#modalLogin"><span class="i-enter"></span> Entre</a>
-				    ou
-				    <a href="" class="lnk-hd-01" data-toggle="modal" data-target="#modalCadastro">Cadastre-se</a>
+				    <div class="acc-menu">
+						<a data-toggle="dropdown"  href="#">
+							<div class="mini-profile-pic">
+								<img src="http://dummyimage.com/32x32/eeeeee/666666.jpg" class="img-circle img-responsive" alt="ex-profile" width="32" height="32">
+							</div>
+							Olá Mark
+						</a>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="#">Minha conta</a></li>
+							<li><a href="#">Meus pedidos</a></li>
+							<li><a href="#">Sair</a></li>
+						</ul>
+					</div>
 			    </div>
 		    </div>
 		</header>
@@ -59,52 +70,319 @@
 					</ol>
 				</div>
 			</div>
-		    <div class="container">
-			    <h1 class="tt-checkout"><span class="text-muted">Power Lunch /</span> Carrinho</h1>
-			    <div class="table-responsive">
-				    <table class="table">
-					    <thead>
-						    <tr>
-							    <th>Imagem</th>
-							    <th>Produto</th>
-							    <th>Qtd</th>
-							    <th>Valor Unit.</th>
-							    <th>Total</th>
-						    </tr>
-					    </thead>
-					    <tbody>
-						    <tr>
-							    <td>
-								    <img src="http://dummyimage.com/64x64/eeeeee/666666.jpg" class="img-responsive" title="Nome do produto" alt="Nome do produto"/>
+			<div class="ckt-cart">
+			    <div class="container">
+				    <h1 class="tt-checkout"><span class="text-muted">Power Lunch /</span> Carrinho</h1>
+				    <div class="table-responsive">
+					    <table class="table table-lg">
+						    <thead>
+							    <tr>
+								    <th>Imagem</th>
+								    <th>Produto</th>
+								    <th>Qtd</th>
+								    <th>Valor Unit.</th>
+								    <th class="text-right">Total</th>
+							    </tr>
+						    </thead>
+						    <tbody>
+							    <tr>
+								    <td>
+									    <img src="http://dummyimage.com/64x64/eeeeee/666666.jpg" class="img-responsive" title="Nome do produto" alt="Nome do produto"/>
+									    </td>
+								    <td>
+									    <strong>Nome do Produto</strong><br/>
+									    <small class="rsm-pdt">A descrição abreviada do produto</small>
 								    </td>
-							    <td>
-								    <strong>Nome do Produto</strong><br/>
-								    <small>A descrição abreviada do produto</small>
-							    </td>
-							    <td>
-								    
-							    </td>
-							    <td>
-								    <strong>R$ 39,90</strong>
-							    </td>
-							    <td>
-								    <strong>R$ 39,90</strong>
-							    </td>
-						    </tr>
-					    </tbody>
-				    </table>
+								    <td>
+									    <div class="ctn-ipt-qtd">
+									    	<input class="spinner-qtd" name="value">
+									    </div>
+									    <button class="btn-rmv"><span class="i-remove"></span></button>
+								    </td>
+								    <td>
+									    <strong class="prc">R$ 00,00</strong>
+								    </td>
+								    <td class="text-right">
+									    <strong class="prc">R$ 00,00</strong>
+								    </td>
+							    </tr>
+								<tr>
+								    <td>
+									    <img src="http://dummyimage.com/64x64/eeeeee/666666.jpg" class="img-responsive" title="Nome do produto" alt="Nome do produto"/>
+									    </td>
+								    <td>
+									    <strong>Nome do Produto</strong><br/>
+									    <small class="rsm-pdt">A descrição abreviada do produto</small>
+								    </td>
+								    <td>
+									    <div class="ctn-ipt-qtd">
+									    	<input class="spinner-qtd" name="value">
+									    </div>
+									    <button class="btn-rmv"><span class="i-remove"></span></button>
+								    </td>
+								    <td>
+									    <strong class="prc">R$ 00,00</strong>
+								    </td>
+								    <td class="text-right">
+									    <strong class="prc">R$ 00,00</strong>
+								    </td>
+							    </tr>
+							    <tr>
+								    <td>
+									    <img src="http://dummyimage.com/64x64/eeeeee/666666.jpg" class="img-responsive" title="Nome do produto" alt="Nome do produto"/>
+									    </td>
+								    <td>
+									    <strong>Nome do Produto</strong><br/>
+									    <small class="rsm-pdt">A descrição abreviada do produto</small>
+								    </td>
+								    <td>
+									    <div class="ctn-ipt-qtd">
+									    	<input class="spinner-qtd" name="value">
+									    </div>
+									    <button class="btn-rmv"><span class="i-remove"></span></button>
+								    </td>
+								    <td>
+									    <strong class="prc">R$ 00,00</strong>
+								    </td>
+								    <td class="text-right">
+									    <strong class="prc">R$ 00,00</strong>
+								    </td>
+							    </tr>
+						    </tbody>
+					    </table>
+				    </div>
+			    </div>
+			</div>
+		    
+		    <!-- ENTREGA -->
+		    <div class="ckt-delivery">
+			    <div class="container">
+					<h2 class="tt-checkout">Entrega</h2>
+					<div class="row">
+						
+						<!-- ENDERECO -->
+						<div class="col-xs-12 col-sm-6 col-md-5">
+							<h5>Endereço de entrega</h5>
+							
+							<!--OPÇÕES DE ENTREGA-->
+							<div class="row">
+								<div class="col-xs-7">
+									<div class="form-group">
+										<select class="form-control">
+											<option>Casa</option>
+											<option>Trabalho</option>
+											<option>Escritório Jardins</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-5">
+									<select class="form-control">
+										<option>Quantas pessoas?</option>
+										<option>1</option>
+										<option>2</option>
+									</select>
+								</div>
+							</div>
+							
+							<!--Opções de endereço-->
+							<div class="row">
+								<div class="col-xs-7">
+									<p class="text-muted">
+										Rua Parnaiba, 160, A<br/>
+										80510-310<br/>
+										São Paulo - SP
+									</p>
+								</div>
+								<div class="col-xs-5 text-right">
+									<button class="btn btn-default btn-sm btn-round">Editar</button>
+									<button class="btn btn-default btn-sm btn-round">Remover</button>
+								</div>
+							</div>
+							<button class="btn-text" data-toggle="modal" data-target="#modalAddEndereco" role="button">+ Adicionar novo endereço</button>
+						</div>
+						<!-- / ENDERECO -->
+						
+						<!--AGENDAMENDO-->
+						<div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group form-agendamento">
+										<label class="radio-inline">
+											<input type="radio" name="agendarEntrega" id="agendarEntrega" value="agendar"> Agendar entrega
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="agendarEntrega" id="retirarPedido" value="retirar"> Retirar na loja
+										</label>
+									</div>
+								</div>
+								<div class="col-xs-7">
+									<div class="form-group">
+										<select class="form-control">
+											<option>Hoje</option>
+											<option>Amanhã</option>
+											<option>00/00/00</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-5">
+									<select class="form-control">
+										<option>Horário</option>
+										<option>00:00h - 00:00h</option>
+										<option>00:00h - 00:00h</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- / AGENDAMENDO-->
+						
+					</div>
 			    </div>
 		    </div>
+		    <!-- / ENTREGA -->
+		    
+		    <!-- CUPOM E CREDITO -->
+		    <div class="ckt-actions">
+			    <div class="container">
+				    <div class="row">
+					    <div class="col-xs-12 col-sm-6 col-md-3 m-bottom">
+						    <h4 class="subtt-checkout">Cupom de descondo</h4>
+						    <!-- Em caso de erro apliar a classe "has-error" na div abaixo e mudar o texto informando o erro -->
+						    <div id="addCupom" class="form-group">
+							    <label class="control-label">Digite abaixo o código do cupom <!--Cupom inválido--></label>
+							    <div class="input-group">
+								    <input type="text" class="form-control" placeholder="Código do cupom">
+								    <span class="input-group-btn">
+								    	<button role="button" id="applyCupom" class="btn btn-default">Aplicar</button>
+								    </span>
+							    </div>
+						    </div>
+						    <!-- Cupom aplicado. Basta remover a classe "hidden" e aplicar a mesma classe no addCupom -->
+						    <div class="coupon hidden">
+							    <p>O cupom <strong class="text-primary">SB001</strong> gerou <strong class="text-primary">R$ 7,00</strong> ou 5% de desconto no sub-total do seu pedido.</p>
+							    <button class="btn-rmv"><span class="i-remove"></span></button>
+						    </div>
+					    </div>
+					    <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-3 m-bottom">
+						    <h4 class="subtt-checkout">Créditos pré-pagos</h4>
+						    <div class="form-group">
+							    <label class="control-label">Compre créditos pré-pago e ganhe <strong class="text-primary">5% de bônus</strong></label>
+							    <!--Fazer um script para desmarcar a opção quando ela for clicada-->
+							    <div class="cdt-opt">
+								    <label><input type="radio" name="opcaoCredito" id="credito250" value="250"><span>R$ 250</span></label>
+								    <label><input type="radio" name="opcaoCredito" id="credito500" value="250"><span>R$ 500</span></label>
+								    <label><input type="radio" name="opcaoCredito" id="credito750" value="250"><span>R$ 750</span></label>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		    <!-- CUPOM E CREDITO -->
 		</section>
 					    
 		<!--FOOTER CHECKOUT-->
 		<footer class="z-ft-ckt">
-			zxdfsdf
+			<div class="pull-left hidden-xs">
+				<a class="btn btn-default btn-lg btn-round" href="#" role="button"><span class="i-arrow-left visible-sm-inline-block"></span> <span class="hidden-sm">Continuar comprando</span></a>
+			</div>
+			<div class="pull-right">
+				<span class="ttl">
+					Subtotal
+					<strong>R$ 00,00</strong>
+				</span>
+				<!-- Aparece somente quando o crédito é selecionado -->
+				<span class="ttl">
+					Creditos
+					<strong>R$ 00,00</strong>
+				</span>
+				<!-- Aparece somente quando o frete é selecionado -->
+				<span class="ttl">
+					Frete
+					<strong>R$ 00,00</strong>
+				</span>
+				<span class="ttl-grl">
+					Total
+					<strong>R$ 0.000,00</strong>
+				</span>
+				<button class="btn btn-primary btn-lg btn-round" type="submit">Prosseguir</button>
+			</div>
 		</footer>
 		<!-- / FOOTER-->
 		
+		<!-- MODAL ENDERECO -->
+		<div class="modal modal-acc fade" id="modalAddEndereco" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalLoginLabel">Novo endereço</h4>
+					<div class="modal-body">
+						<div class="row text-left">
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label">Tipo de endereço</label>
+								<div>
+									<label class="radio-inline">
+										<input type="radio" name="TipoTrabalho" id="TipoTrabalho" value="Trabalho"> Trabalho 
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="TipoCasa" id="TipoCasa" value="Casa"> Casa 
+									</label>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label" for="cadCep">Cep</label>
+								<input type="text" class="form-control input-lg" id="cadCep">
+							</div>
+						</div>
+						<div class="row text-left">
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label" for="cadRua">Rua</label>
+								<input type="text" class="form-control input-lg" id="cadRua">
+							</div>
+							<div class="col-xs-5 col-sm-2 form-group">
+								<label class="control-label" for="cadNumero">Número</label>
+								<input type="text" class="form-control input-lg" id="cadNumero">
+							</div>
+							<div class="col-xs-7 col-sm-4 form-group">
+								<label class="control-label" for="cadNumero">Complemento</label>
+								<input type="text" class="form-control input-lg" id="cadNumero">
+							</div>
+							<div class="col-xs-12 col-sm-6 form-group">
+								<label class="control-label" for="cadNomeEmpresa">Nome da Empresa</label>
+								<input type="text" class="form-control input-lg" id="cadNomeEmpresa">
+							</div>
+							<div class="col-xs-5 col-sm-2 form-group">
+								<label class="control-label" for="cadRamal">Ramal</label>
+								<input type="text" class="form-control input-lg" id="cadRamal">
+							</div>
+							<div class="col-xs-7 col-sm-4 form-group">
+								<label class="control-label" for="cadCelularEmpresa">Celular</label>
+								<input type="text" class="form-control input-lg" id="cadCelularEmpresa">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- / MODAL ENDERECO -->
+		
 		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				$( ".spinner-qtd" ).spinner({
+					spin: function( event, ui ) {
+						if ( ui.value > 10 ) {
+						  $( this ).spinner( "value", -10 );
+						  return false;
+						} else if ( ui.value < -10 ) {
+						  $( this ).spinner( "value", 10 );
+						  return false;
+						}
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

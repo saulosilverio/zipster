@@ -9,6 +9,14 @@
 	.z-ft-01 {
 		margin-top: 30px;
 	}
+	.btn-primary.btn-round {
+		min-width: 0;
+	}
+	
+	/*CHECKOUT*/
+	.z-ft-ckt {
+		padding: 20px;
+	}
 }
 @media (max-width: 767px) {
 	/*HEADER*/
@@ -24,7 +32,7 @@
 		line-height: 24px;
 	}
 	.lnk-hd-01 [class^="i-"], 
-	.lnk-hd-01[class*="i-"]{
+	.lnk-hd-01 [class*="i-"]{
 		font-size: 18px;
 	}
 	.hd-pg {
@@ -34,6 +42,14 @@
 		font-size: 16px;
 		line-height: 1.6;
 	}
+	.acc-menu,
+	.mini-profile-pic {
+		height: 24px;
+	}
+	.mini-profile-pic {
+		width: 24px;
+	}
+	
 	/* FORM */
 	.sep-form { 
 		padding: 20px 0;
@@ -99,6 +115,31 @@
 	}
 	.ckt-steps li:after {
 		font-size: 18px;
+	}
+	.z-ft-ckt {
+		padding: 8px 10px;
+	}
+	.z-ft-ckt .pull-right {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.z-ft-ckt .btn-primary {
+		display: block;
+		padding: 10px 15px;
+		width: 100%;
+	}
+	.ttl,
+	.ttl-grl {
+		text-align: left;
+		margin-right: 8px;
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+	.ttl strong,
+	.ttl-grl strong {
+		display: block;
+		font-size: 14px;
 	}
 }
 @media (max-width: 400px) {

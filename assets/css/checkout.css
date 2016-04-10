@@ -3,8 +3,17 @@
 	- Cor das bordas #DDDDDD
 	- Cor padrão dos textos #666666 
 */
+.ckt-bottom-space {
+	padding-bottom: 130px;
+}
 .tt-checkout {
-	font-size: 22px;
+	font-size: 20px;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+.subtt-checkout {
+	font-size: 16px;
+	margin: 0 0 20px 0;
 	text-transform: uppercase;
 }
 
@@ -68,6 +77,61 @@
 	color: #4bcf75;
 }
 
+/*CARRINHO*/
+.ckt-cart {
+	padding-bottom: 20px;
+}
+
+/*ENTREGA*/
+.ckt-delivery,
+.ckt-actions {
+	border-top: 1px solid #ddd;
+	padding: 40px 0;
+}
+.form-agendamento {
+	margin-top: 8px;
+	margin-bottom: 20px;
+}
+
+/*CUPOM*/
+.coupon {
+	border: 1px dashed #4bcf75;
+	border-radius: 3px;
+	color: #999;
+	padding: 20px;
+	position: relative;
+}
+.coupon .btn-rmv {
+	border: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.coupon .btn-rmv:hover {
+	color: #333;
+}
+
+/*TOTAL*/
+.ttl,
+.ttl-grl {
+	color: #999;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 16px;
+	font-weight: 300;
+	vertical-align: middle;
+}
+.ttl strong,
+.ttl-grl strong {
+	color: #111;
+	display: block;
+	font-size: 18px;
+	font-weight: 300;
+}
+.ttl-grl strong {
+	font-weight: bold;
+}
+
 /*FOOTER*/
 .z-ft-ckt {
 	background: #fff;
@@ -78,4 +142,5 @@
 	padding: 30px;
 	position: fixed;
 	width: 100%;
+	z-index: 99;
 }

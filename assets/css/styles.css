@@ -82,8 +82,35 @@ label {
 h1, .h1, h2, .h2, h3, .h3 {
 	font-weight: 100;
 }
+h5, .h5 {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
 p {
 	font-weight: 300;
+}
+.dropdown-menu {
+	border: none;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+	font-weight: 300;
+	padding: 10px;
+}
+.dropdown-menu > li {
+	border-bottom: 1px solid #eee;
+}
+.dropdown-menu > li:last-child {
+	border: none;
+}
+.dropdown-menu > li > a {
+	color: #999;
+    padding: 10px 5px;
+    font-weight: 300;
+}
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus {
+	background: transparent;
+	color: #4bcf75;
 }
 
 /***************************
@@ -91,6 +118,9 @@ FORM
 ***************************/
 .form-group {
 	margin-bottom: 20px;
+}
+.control-label {
+	color: #999;
 }
 .radio-inline, 
 .checkbox-inline {
@@ -120,10 +150,20 @@ FORM
 /***************************
 BOTOES
 ***************************/
+[class^="btn-"], 
+[class*="btn-"]{
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+
 .btn {
 	font-weight: 300;
 	text-transform: uppercase;
 	border: none;
+	padding: 9px 12px;
     -webkit-transition: all 0.2s ease-in-out;
        -moz-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
@@ -134,6 +174,68 @@ BOTOES
 .btn:active {
 	outline: none;
 }
+.btn-sm, .btn-group-sm > .btn {
+	padding: 5px 10px;
+}
+.btn-default {
+	border: 1px solid #ccc;
+	color: #999;
+	background-color: #ffffff;
+	text-transform: none;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #666;
+  background-color: #f9f9f9;
+  border-color: #999;
+}
+.btn-default:hover {
+  color: #666;
+  background-color: #f9f9f9;
+  border-color: #999;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #666;
+  background-color: #f9f9f9;
+  border-color: #999;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #333333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.btn-default .badge {
+  color: #ffffff;
+  background-color: #333333;
+}
+
 .btn-facebook {
 	background: #3b5998;
 	color: #fff;
@@ -158,15 +260,72 @@ BOTOES
 	padding: 15px;
 }
 
+.btn-rmv {
+	background: transparent;
+	border: 1px solid #ddd;
+	border-radius: 100%;
+	color: #ccc;
+	font-size: 10px;
+	line-height: 24px;
+	padding: 0;
+	height: 24px;
+	width: 24px;
+}
+.btn-rmv:hover,
+.btn-rmv:focus,
+.btn-rmv:active {
+	color: #FF5E4F;
+	border-color: #FF5E4F;
+}
+.btn-round {
+	border-radius: 50%;
+}
+.btn-sm.btn-round {
+	border-radius: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-transform: uppercase;
+}
+.btn-lg.btn-round {
+	border-radius: 25px;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.btn-primary.btn-round {
+	min-width: 200px;
+}
+
+.btn-text {
+	background: none;
+	border: none; 
+	color: #4bcf75;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+.btn-text:hover,
+.btn-text:focus,
+.btn-text:active {
+	color: #33a658;
+	outline: none;
+}
 /***************************
 INPUTS
 ***************************/
 .form-control {
 	color: #666;
+	height: 40px;
 	box-shadow: none;
 	font-weight: 300;
-	 -webkit-appearance: none;
-    -moz-appearance: none;
+	padding: 10px 15px;
+}
+input.form-control,
+textarea.form-control {
+	-webkit-appearance: none;
+	
 }
 .form-control:focus {
 	outline: none;
@@ -221,6 +380,41 @@ INPUTS
 }
 .ipt-grp .col-ipt-grp .btn {
 	border-radius: 0;
+}
+
+/* Opções de crédito */
+.cdt-opt {
+	margin-bottom: 15px;
+}
+.cdt-opt input[type="radio"] {
+	display: none;
+}
+.cdt-opt label span {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #666;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 8px 20px;
+	-webkit-transition: all 0.2s ease-in-out;
+	   -moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		 -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+	
+}
+.cdt-opt label span:hover {
+	border-color: #4bcf75;
+	color: #4bcf75;
+}
+.cdt-opt input[type="radio"]:checked + span,
+.cdt-opt input[type="radio"]:checked + span:hover {
+	background-color: #4bcf75;
+	border-color: #4bcf75;
+	color: #fff;
 }
 
 /***************************
@@ -333,6 +527,47 @@ HEADER PRINCIPAL
 	font-weight: 900;
 	white-space: nowrap;
 }
+
+/* Account Menu */
+.acc-menu {
+	position: relative;
+	height: 32px;
+}
+.acc-menu > a {
+	color: #666;
+	display: block;
+	float: left;
+	font-weight: 100;
+}
+.acc-menu > a:hover {
+	color: #4bcf75
+}
+.acc-menu > a:after {
+    content: "";
+    border: 4px solid transparent;
+    border-top-color: #666;
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align: middle;
+	-webkit-transition: all 0.2s ease-in-out;
+	   -moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		 -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+}
+.acc-menu > a:hover:after {
+	border-top-color: #4bcf75;
+}
+.mini-profile-pic {
+	display: inline-block;
+	height: 32px;
+	line-height: normal;
+	margin-right: 5px;
+	position: relative;
+	vertical-align: middle;
+	width: 32px;
+}
+
 /***************************
 CONTEUDO
 ***************************/
@@ -415,6 +650,58 @@ CONTEUDO
 .col-md-4 .pnl-rest .info-pnl-rest {
 	padding: 20px;
 	padding-left: calc(30% + 40px);
+}
+
+/*Tabela lg*/
+.table-lg {
+	font-weight: 300;
+}
+.table-lg > thead > tr > th, 
+.table-lg > tbody > tr > th, 
+.table-lg > tfoot > tr > th, 
+.table-lg > thead > tr > td, 
+.table-lg > tbody > tr > td, 
+.table-lg > tfoot > tr > td {
+	padding: 20px 10px;
+}
+.table-lg > thead > tr > th:first-child, 
+.table-lg > tbody > tr > th:first-child, 
+.table-lg > tfoot > tr > th:first-child, 
+.table-lg > thead > tr > td:first-child, 
+.table-lg > tbody > tr > td:first-child, 
+.table-lg > tfoot > tr > td:first-child {
+	padding-left: 0;
+}
+.table-lg > thead > tr > th:last-child, 
+.table-lg > tbody > tr > th:last-child, 
+.table-lg > tfoot > tr > th:last-child, 
+.table-lg > thead > tr > td:last-child, 
+.table-lg > tbody > tr > td:last-child, 
+.table-lg > tfoot > tr > td:last-child {
+	padding-right: 0;
+}
+.table-lg > thead > tr > th {
+	border-width: 1px;
+	color: #999;
+	font-size: 12px;
+	font-weight: 300;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+}
+
+/*Itens / Produtos*/
+.prc {
+	font-size: 16px;
+	font-weight: 500;	
+}
+.ctn-ipt-qtd {
+	display: inline-block;
+	max-width: 65px;
+	width: auto;	
+}
+small.rsm-pdt {
+	color: #999;
 }
 
 /***************************
@@ -542,9 +829,56 @@ FOOTER
 .z-ft-copy a:hover {
 	color: #4bcf75;
 }
+
 /***************************
 FUNCIONAIS
 ***************************/
 .m-top {
 	margin-top: 20px;
+}
+.m-bottom {
+	margin-bottom: 20px;
+}
+
+/***************************
+JQUERY UI
+***************************/
+.ui-widget-content {
+	border-color: #ddd;
+	width: 100%;
+}
+.ui-spinner-input {
+	color: #666;
+	font-size: 14px;
+	font-weight: 300;
+	margin: .5em 0;
+	margin-left: .5em;
+    margin-right: 22px;
+}
+.ui-spinner-input:focus {
+	outline: none;
+}
+.ui-widget-content a {
+	color: #ccc;
+}
+.ui-spinner .ui-icon {
+	opacity: 0.4;
+	width: 20px;
+}
+.ui-corner-tr {
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.ui-corner-br {
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.ui-spinner-button {
+	width: 20px;
+}
+.ui-icon-triangle-1-n {
+    background-position: 2px -16px;
+}
+.ui-spinner .ui-icon-triangle-1-s {
+    background-position: -63px -16px;
 }
