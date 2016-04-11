@@ -141,6 +141,12 @@
 		display: block;
 		font-size: 14px;
 	}
+	.pymt-tabs li {
+		padding: 10px 5px;
+	}
+	.pymt-tabs li a {
+		font-size: 10px;
+	}
 }
 @media (max-width: 400px) {
 	.pnl-rest {

@@ -202,6 +202,12 @@
 .ttl-grl strong {
 	font-weight: bold;
 }
+.sld-cdt {
+	font-size: 24px;
+	display: block;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
 
 /*FOOTER*/
 .z-ft-ckt {

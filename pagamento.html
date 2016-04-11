@@ -171,13 +171,52 @@
 									</div>
 									
 									<div role="tabpanel" class="tab-pane" id="debito">
-										Cartão de débito
+										<div class="text-center">
+											<p class="lead text-muted">São aceitos os seguintes cartões:</p>
+											<p class="m-bottom">
+												<span data-toggle="tooltip" data-placement="top" title="Maestro">
+													<img src="assets/img/cartoes/maestro.svg" alt="Maestro" width="50" height="32">
+												</span>
+												<span data-toggle="tooltip" data-placement="top" title="Visa Electron">
+													<img src="assets/img/cartoes/visa-electron.svg" alt="Visa Electron" width="50" height="32">
+												</span>
+												<span data-toggle="tooltip" data-placement="top" title="Elo">
+													<img src="assets/img/cartoes/elo.svg" alt="Elo" width="50" height="32">
+												</span>
+											</p>
+											<p class="lead text-muted">O pagamento com débito deverá ser feito na maquineta no momento da entrega do pedido.</p>
+										</div>
 									</div>
 									<div role="tabpanel" class="tab-pane" id="ticket">
-										Ticket refeição
+										<div class="text-center">
+											<p class="lead text-muted">Selecione o(s) cartão(ões) que deseja utilizar:</p>
+											<div class="form-group">
+												<label class="radio-checkbox">
+													<input type="checkbox" name="ticketFlag" id="alelo" value="alelo"> 
+													<img src="assets/img/cartoes/alelo.svg" alt="Alelo" width="50" height="32">
+												</label>
+												<label class="radio-inline">
+													<input type="checkbox" name="ticketFlag" id="sodexo" value="sodexo"> 
+													<img src="assets/img/cartoes/sodexo.svg" alt="Sodexo" width="50" height="32">
+												</label>
+												<label class="radio-inline">
+													<input type="checkbox" name="ticketFlag" id="ticket" value="ticket"> 
+													<img src="assets/img/cartoes/ticket.svg" alt="Ticket" width="50" height="32">
+												</label>
+												<label class="radio-inline">
+													<input type="checkbox" name="ticketFlag" id="vr" value="vr"> 
+													<img src="assets/img/cartoes/vr.svg" alt="VR" width="50" height="32">
+												</label>
+											</div>
+											<p class="lead text-muted">O pagamento com cartão refeição deverá ser feito na maquineta no momento da entrega do pedido.</p>
+										</div>
 									</div>
 									<div role="tabpanel" class="tab-pane" id="prepago">
-										Créditos pré-pagos
+										<div class="text-center">
+											<p class="lead text-muted">Você tem:</p>
+											<span class="sld-cdt text-primary">R$ 000,00</span>
+											<p class="lead text-muted">Serão descontados <strong>R$ 00,00</strong> dos seus créditos</p>
+										</div>
 									</div>
 								</div>
 							
@@ -278,12 +317,17 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
-		   $(document).ready( function() {
-				 //add cartão  
-				 $('#addCard').click(function() {
-				    $('#creditCardList').append('<div class="car-cred animated fadeIn"><button type="button" id="removeCard" class="btn-rmv"><span class="i-remove"></span></button><h4 class="subtt-checkout">Cartão adicional</h4><div class="form-group"><label class="radio-inline"><input type="radio" name="cardFlag" id="mastercard" value="mastercard"> <img src="assets/img/cartoes/mastercard.svg" alt="Master Card" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="visa" value="visa"> <img src="assets/img/cartoes/visa.svg" alt="Visa" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="elo" value="elo"> <img src="assets/img/cartoes/elo.svg" alt="Elo" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="diners" value="diners"> <img src="assets/img/cartoes/diners.svg" alt="Diners" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="amex" value="amex"> <img src="assets/img/cartoes/amex.svg" alt="American Express" width="50" height="32"></label></div><div class="row"><div class="col-xs-12 col-sm-6 form-group"><label class="control-label" for="cardNome">Nome como consta no cartão</label><input type="text" class="form-control input-lg" id="cardNome"></div><div class="col-xs-12 col-sm-6 form-group"><label class="control-label" for="cardNumero">Número</label><input type="number" class="form-control input-lg" id="cardNumero"></div><div class="col-xs-12 col-sm-6 form-group"><label class="control-label">Validade</label><div class="row"><div class="col-xs-6"><select class="form-control input-lg"><option>01</option><option>02</option></select></div><div class="col-xs-6"><select class="form-control input-lg"><option>2016</option><option>2017</option></select></div></div></div><div class="col-xs-6 col-sm-6 form-group"><label class="control-label" for="cardCVV">Cód. de segurança</label><div class="cvv"><input type="number" class="form-control input-lg" id="cardCVV"><span class="img-cvv"><img src="assets/img/cvv.svg" title="Código de segurança" alt="Código de segurança" width="75" height="42"/></span></div></div><div class="col-xs-6 col-sm-6 form-group"><span class="ttl-card">Valor a ser cobrado<strong>R$ 00,00</strong></span></div></div></div>');
-				 });
+			//add cartão
+			$(document).ready( function() {
+				$('#addCard').click(function() {
+					$('#creditCardList').append('<div class="car-cred animated fadeIn"><button type="button" id="removeCard" class="btn-rmv"><span class="i-remove"></span></button><h4 class="subtt-checkout">Cartão adicional</h4><div class="form-group"><label class="radio-inline"><input type="radio" name="cardFlag" id="mastercard" value="mastercard"> <img src="assets/img/cartoes/mastercard.svg" alt="Master Card" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="visa" value="visa"> <img src="assets/img/cartoes/visa.svg" alt="Visa" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="elo" value="elo"> <img src="assets/img/cartoes/elo.svg" alt="Elo" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="diners" value="diners"> <img src="assets/img/cartoes/diners.svg" alt="Diners" width="50" height="32"></label><label class="radio-inline"><input type="radio" name="cardFlag" id="amex" value="amex"> <img src="assets/img/cartoes/amex.svg" alt="American Express" width="50" height="32"></label></div><div class="row"><div class="col-xs-12 col-sm-6 form-group"><label class="control-label" for="cardNome">Nome como consta no cartão</label><input type="text" class="form-control input-lg" id="cardNome"></div><div class="col-xs-12 col-sm-6 form-group"><label class="control-label" for="cardNumero">Número</label><input type="number" class="form-control input-lg" id="cardNumero"></div><div class="col-xs-12 col-sm-6 form-group"><label class="control-label">Validade</label><div class="row"><div class="col-xs-6"><select class="form-control input-lg"><option>01</option><option>02</option></select></div><div class="col-xs-6"><select class="form-control input-lg"><option>2016</option><option>2017</option></select></div></div></div><div class="col-xs-6 col-sm-6 form-group"><label class="control-label" for="cardCVV">Cód. de segurança</label><div class="cvv"><input type="number" class="form-control input-lg" id="cardCVV"><span class="img-cvv"><img src="assets/img/cvv.svg" title="Código de segurança" alt="Código de segurança" width="75" height="42"/></span></div></div><div class="col-xs-6 col-sm-6 form-group"><span class="ttl-card">Valor a ser cobrado<strong>R$ 00,00</strong></span></div></div></div>');
+				});
 			});
+			
+			//Chama tolltip
+			$(function () {
+			  $('[data-toggle="tooltip"]').tooltip()
+			})
 		</script>
 	</body>
 </html>

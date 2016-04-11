@@ -146,6 +146,15 @@ FORM
 .lead {
 	font-weight: 100;
 }
+.radio-inline,
+.checkbox-inline {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.radio-inline + .radio-inline, 
+.checkbox-inline + .checkbox-inline {
+	margin-left: 0;
+}
 
 /***************************
 BOTOES
