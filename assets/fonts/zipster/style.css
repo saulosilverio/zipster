@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'zipster';
-    src:    url('fonts/zipster.eot?83vbjd');
-    src:    url('fonts/zipster.eot?83vbjd#iefix') format('embedded-opentype'),
-        url('fonts/zipster.ttf?83vbjd') format('truetype'),
-        url('fonts/zipster.woff?83vbjd') format('woff'),
-        url('fonts/zipster.svg?83vbjd#zipster') format('svg');
+    src:    url('fonts/zipster.eot?646ryv');
+    src:    url('fonts/zipster.eot?646ryv#iefix') format('embedded-opentype'),
+        url('fonts/zipster.ttf?646ryv') format('truetype'),
+        url('fonts/zipster.woff?646ryv') format('woff'),
+        url('fonts/zipster.svg?646ryv#zipster') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +24,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.i-express:before {
+    content: "\e908";
+}
+.i-filter:before {
+    content: "\e909";
+}
+.i-pin:before {
+    content: "\e90a";
+}
+.i-shop:before {
+    content: "\e90b";
+}
 .i-arrow-left:before {
     content: "\e907";
 }

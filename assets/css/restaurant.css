@@ -1,0 +1,91 @@
+/* CORES
+	- Cor primária Zipster  #4ACF74
+	- Cor das bordas #DDDDDD
+	- Cor padrão dos textos #666666 
+*/
+
+.hd-rest-pg {
+	background-color: #eee;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 35vh;
+	min-height: 200px;
+	margin-top: -60px;
+	width: 100%;
+}
+.hd-rest-pg:before {
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to right,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=1 );
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.bar-hd-rest-pg {
+	background: rgba(255, 255, 255, 0.9);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.bar-hd-rest-pg,
+.ctn-rest-logo,
+.bar-hd-rest-pg .dtl-rest {
+	min-height: 80px;
+}
+.ctn-rest-logo {
+	position: relative;
+}
+.logo-rest {
+	border-radius: 3px;
+	bottom: 30px;
+	height: auto;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+.bar-hd-rest-pg .dtl-rest {
+	display: table;
+}
+.bar-hd-rest-pg .dtl-rest > span {
+	display: table-cell;
+	padding-right: 30px;
+	vertical-align: middle;
+}
+.bar-hd-rest-pg .dtl-rest > span:last-child {
+	padding: 0;
+}
+
+/*BOTÃO CART*/
+.btn-rest-cart {
+	background: none;
+	border: 1px solid #4bcf75;
+	border-radius: 25px;
+	color: #4bcf75;
+	font-size: 18px;
+	font-weight: 300px;
+	line-height: 50px;
+	padding: 0 25px;
+	vertical-align: middle;
+}
+.btn-rest-cart [class^="i-"], 
+.btn-rest-cart [class*="i-"]{
+	font-size: 24px;
+}
+.btn-rest-cart:hover {
+	background: #4bcf75;
+	color: #fff;
+}
+.btn-rest-cart:focus,
+.btn-rest-cart:active {
+	background: #33a658;
+}
+.bar-hd-rest-pg .btn-rest-cart {
+	margin-top: 14px;
+}

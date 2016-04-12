@@ -3,7 +3,8 @@
 		margin-bottom: 30px;
 	}
 	.hd-pg,
-	.ctn-ckt-steps {
+	.ctn-ckt-steps,
+	.hd-rest-pg {
 		margin: -30px 0 30px 0;
 	}
 	.z-ft-01 {
@@ -146,6 +147,23 @@
 	}
 	.pymt-tabs li a {
 		font-size: 10px;
+	}
+	
+	/*RESTAURANT*/
+	.bar-hd-rest-pg {
+		padding: 10px 0;
+	}
+	.ctn-rest-logo {
+		min-height: 50px;
+	}
+	.bar-hd-rest-pg .dtl-rest,
+	.bar-hd-rest-pg {
+		min-height: 0;
+	}
+	.bar-hd-rest-pg .dtl-rest > span {
+		display: block;
+		padding: 0 0 5px 0;
+		vertical-align: top;
 	}
 }
 @media (max-width: 400px) {
