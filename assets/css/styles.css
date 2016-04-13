@@ -112,7 +112,10 @@ p {
 	background: transparent;
 	color: #4bcf75;
 }
-
+ul.row {
+	list-style: none;
+	padding: 0;
+}
 /***************************
 FORM
 ***************************/
@@ -772,9 +775,6 @@ MODAL
 }
 .modal-acc .modal-body {
 	padding: 0;
-}
-.owl-carousel .item {
-	width: 100%;
 }
 
 /***************************

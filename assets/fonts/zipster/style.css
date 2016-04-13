@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'zipster';
-    src:    url('fonts/zipster.eot?646ryv');
-    src:    url('fonts/zipster.eot?646ryv#iefix') format('embedded-opentype'),
-        url('fonts/zipster.ttf?646ryv') format('truetype'),
-        url('fonts/zipster.woff?646ryv') format('woff'),
-        url('fonts/zipster.svg?646ryv#zipster') format('svg');
+    src:    url('fonts/zipster.eot?jzdoi2');
+    src:    url('fonts/zipster.eot?jzdoi2#iefix') format('embedded-opentype'),
+        url('fonts/zipster.ttf?jzdoi2') format('truetype'),
+        url('fonts/zipster.woff?jzdoi2') format('woff'),
+        url('fonts/zipster.svg?jzdoi2#zipster') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +24,27 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.i-shop-express:before {
+    content: "\e912";
+}
+.i-checked:before {
+    content: "\e911";
+}
+.i-gluten-free:before {
+    content: "\e90c";
+}
+.i-pepper:before {
+    content: "\e90d";
+}
+.i-seeds-free:before {
+    content: "\e90e";
+}
+.i-vegan:before {
+    content: "\e90f";
+}
+.i-vegetarian:before {
+    content: "\e910";
+}
 .i-express:before {
     content: "\e908";
 }

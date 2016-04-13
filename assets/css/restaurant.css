@@ -13,6 +13,7 @@
 	height: 35vh;
 	min-height: 200px;
 	margin-top: -60px;
+	margin-bottom: 30px;
 	width: 100%;
 }
 .hd-rest-pg:before {
@@ -77,6 +78,7 @@
 .btn-rest-cart [class^="i-"], 
 .btn-rest-cart [class*="i-"]{
 	font-size: 24px;
+	vertical-align: sub;
 }
 .btn-rest-cart:hover {
 	background: #4bcf75;
@@ -88,4 +90,220 @@
 }
 .bar-hd-rest-pg .btn-rest-cart {
 	margin-top: 14px;
+}
+
+/*ABAS RESTAURANTE*/
+.ctn-rest-tabs {
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.rest-tabs {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.rest-tabs li {
+	display: inline-block;
+	position: relative;
+}
+.rest-tabs li.active:before {
+	bottom: -16px;
+	content: "";
+	border: 8px solid transparent;
+    border-top-color: #bbb;
+    display: inline-block;
+    left: 50%;
+    margin-left: -6px;
+	position: absolute;
+}
+.rest-tabs li.active:after {
+	bottom: -15px;
+	content: "";
+	border: 8px solid transparent;
+    border-top-color: #fff;
+    display: inline-block;
+    left: 50%;
+    margin-left: -6px;
+	position: absolute;
+}
+.rest-tabs li > a {
+	color: #999;
+	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 50px;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+.rest-tabs li > a:hover {
+	color: #666;
+}
+.rest-tabs li.active a {
+	color: #666;
+	font-weight: bold;
+}
+
+/*Filtros*/
+.flt-menu {
+	position: relative;
+	height: 50px;
+}
+.flt-menu > a {
+	color: #999;
+	display: block;
+	line-height: 50px;
+	font-weight: 300;
+}
+.flt-menu > a [class^="i-"], 
+.flt-menu > a [class*="i-"] {
+	font-size: 16px;
+}
+.flt-menu > a:hover {
+	color: #666;
+}
+.flt-menu > a:after {
+    content: "";
+    border: 4px solid transparent;
+    border-top-color: #999;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 2px;
+    vertical-align: middle;
+	-webkit-transition: all 0.2s ease-in-out;
+	   -moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		 -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+}
+.flt-menu > a:hover:after {
+	border-top-color: #666;
+}
+.flt-menu .dropdown-menu {
+	padding: 0;
+	min-width: 200px;
+}
+.flt-menu .dropdown-menu [class^="i-"],
+.flt-menu .dropdown-menu [class*="i-"] {
+	font-size: 20px;
+	vertical-align: middle;
+}
+.flt-menu .dropdown-menu > li {
+	position: relative;
+}
+.flt-menu .dropdown-menu > li.active a {
+	color: #666;
+	background-color: #f9f9f9;
+}
+.flt-menu .dropdown-menu > li.active:after {
+	color: #666;
+	content: "\e911";
+	font-family: "zipster";
+	font-size: 8px;
+	position: absolute;
+	right: 15px;
+	top: 33%;
+	top: calc(50% - 4px);
+}
+.flt-menu .dropdown-menu > li > a {
+	font-weight: 300;
+	padding: 15px;
+}
+.flt-menu .dropdown-menu > li > a:hover {
+	background: #f9f9f9;
+	color: inherit;
+}
+.i-seed-free {
+	color: #98AA51;	
+}
+.i-gluten-free {
+	color: #D49D6C;	
+}
+.i-pepper {
+	color: #EB354B;	
+}
+.i-vegetarian {
+	color: #4ACF74;	
+}
+.i-vegan {
+	color: #417505;	
+}
+
+/*PRATOS - LISTA*/
+.dish-itm {
+	display: block;
+	margin-bottom: 30px;
+}
+.dish-tmb {
+	cursor: pointer;
+	display: block;
+	height: auto;
+	margin-bottom: 20px;
+	max-width: 100%;
+	width: 100%;
+	-webkit-transition: all 0.2s ease-in-out;
+	   -moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		 -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+}
+.dish-itm:hover .dish-tmb {
+	opacity: 0.8;
+}
+.dish-name {
+	color: #444;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.dish-short-desc {
+	color: #666;
+	font-weight: 300;
+}
+.dish-act {
+	display: table;
+	width: 100%
+}
+.dish-price {
+	color: #444;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.dish-flt {
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.dish-itm .btn-default:hover,
+.dish-itm .btn-default:active,
+.dish-itm .btn-default:focus {
+	background: #4bcf75;
+	border-color: #4bcf75;
+	color: #fff;
+}
+.dish-itm .btn-default:active,
+.dish-itm .btn-default:focus {
+	background: #33a658;
+	border-color: #33a658;
+}
+.msg-express {
+	color: #999;
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/*MODAL DISH*/
+.modal-dish .modal-dialog{
+	max-width: 1140px;
+	width: 100%;
+}
+.modal-dish .modal-body {
+	padding: 0;
+	overflow: hidden;
 }
